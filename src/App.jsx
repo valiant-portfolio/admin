@@ -1,8 +1,9 @@
 import { Suspense, lazy, useEffect } from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Route, BrowserRouter, Routes, Router } from 'react-router-dom';
 import { routes } from './routes';
 import { Toaster } from 'sonner';
 import SimpleLoader from './components/SimpleLoader';
+
 // import { initializePreloading } from './utils/preloader';
 
 // Lazy load Layout component
@@ -54,7 +55,11 @@ function App() {
       <Toaster richColors position='bottom-left'/>
       <RouterProvider router={router} />
     </Suspense>
+    
   ) 
+  
+
+  
 }
 
 export default App
